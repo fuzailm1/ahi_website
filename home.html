@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Al-Hirz</title>
+    <title>Al-Hirz Home</title>
   </head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 <style type="text/css">
-   body { background-color: black; color: white; margin-bottom: 30px; margin-top: 70px;} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+   body {
+     background-color: black;
+     color: white;
+     margin-bottom: 30px;
+     margin-top: 70px;
+     background-image: url("blackbg.jpg");
+     width: 100%;
+     background-attachment: fixed;
+     } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
    .navbar-inverse .navbar-nav > li > a {
   color :#D2A158;
-  font-size: 20px;
+  font-size: 16px;
 }
   .tabtitle{color: gold;}
   h1 {color: green;}
@@ -22,6 +29,23 @@
     text-align: center;
     font-size: 60px;
     font-style: bold;
+    }
+
+    .sok{
+      background-color: white;
+      color: black;
+    }
+    .whitebg{
+      background-image: url("whitebg.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .greenbg{
+       background-image: url("greenbg.png");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
     }
 }
 </style>
@@ -35,21 +59,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Al-Hirz Institute</a>
+      <a href="donate.html"><button type="button" class="btn btn-danger navbar-btn"><b>DONATE NOW</b></button></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#"> Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Founder</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#founder_info">Our Founder</a></li>
+                <li><a href="#partner_info">Our Partners</a></li>
+              </ul>
+        </li>
+
+        <li><a href="programspage.html">Programs</a></li>
+        <li><a href="projectspage.html">Projects</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="https://www.inktv.org/">INK TV</a></li>
+        <li><a href="media.html">AHI Media</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.facebook.com/AlHirzInstitute/">Like us on Facebook</a></li>
-          <a href="https://www.paypal.com/donate/?token=lbRlNlEI1BBg9ALkra-ADmRKB5c69qbe35IqrEuUzbkYsm8tPdNx9HzsyQwAjBhZbIMOBW&country.x=US&locale.x=US"><button type="button" class="btn btn-danger navbar-btn"><b>DONATE NOW</b></button></a>
+
       </ul>
 
     </div><!-- /.navbar-collapse -->
@@ -63,34 +97,105 @@
   <br><br>
 
     <div class="container">
-      <hr>
+      <hr id = "ahi_info">
+      <br>
       <table style ="width: 90%">
         <tr>
 
-              <p class = "headings" font-family = "calibri">AL HIRZ INSTITUTE</p>
+            <p class = "headings" font-family = "calibri" >AL-HIRZ INSTITUTE</p>
             <p align="center"><font size = "4">Initiated through the endeavors of Shaykh ‘Okasha Kameny and actualized through the efforts of his closest team members, Al-Hirz Institute is a multilevel organization that seeks to spread Islamic Knowledge throughout the world. <br><br> Al-Hirz exists to raise the level of knowledge among the Muslims in America and abroad.<br><br> Our institution also seeks to provide much needed and affordable counselling to Muslims and help the youth be confident in their Islamic Identity in these times.<br><br> With the guidance of the Qur’an and Sunnah, we hope to provide light in these dark times and elevate the level of knowledge of the Ummah, with the permission of Allah ‘Azza wa Jal.
         </p>
         </tr>
-      <hr>
+      </table>
+      <br>
+      <hr id="founder_info">
+    </div>
+    <div class="whitebg" style="color: black;">
+      <div class="container">
+      <table style ="width: 90%">
+        <tr><br>
+           <p align = "center"><img src="shaykh2.jpg" width = "60%"></p><br>
+          <p class="headings">SHAYKH OKASHA KAMENY</p>
 
-        <tr>
-          <img src="shaykh.jpg" width = "100%"><br>
-          <p class="headings">SHAYKH OKASHA KAMENY</p><br>
            <p align = "center">
+
            Our beloved Imam Okasha Kameny, may Allah preserve and increase him in goodness, has sought to establish a platform for spreading the ‘ilm Allah has granted him. Okasha Kameny has been blessed by Allah to formally study Islam with several reputable contemporary scholars in the sciences of Arabic, Quranic Sciences (such as Al-Qira’at [the recitation forms of Qur’an] and Tafsir), Ahadith, Fiqh, Islamic History, ‘Aqeedah, Poetry, and more. He has been blessed by Allah to memorize and have ijazaat  (certifications from Islamic Scholars) in the 10 Qira’at of Al-Qur’an as well as over a dozen different books ranging from Saheeh Bukhari and Muslim, Alfiyyah ibn Malik, Ash-Shatibiyyah and much more. Allah has blessed him with remarkable precision in his memory and the understanding to explain Islamic Concepts to Muslims at all levels of knowledge.  With the gifts, knowledge, and experience that Allah has granted him, it is his utmost desire to exert himself in sharing these with your community with the hope that Allah makes these programs a means of securing knowledge and unity in your community for the near and distant future.
-         </p>
-        <a class="btn btn-default" href="#" role="button">Read More</a>
+          <br><br>
+            <a class="btn btn-success" href="founderpage.html" role="button">Read More</a>
+            <br>
+        </p>
         </td>
        </tr>
      </table>
-</div>
+   </div>
+   </div>
+   <hr id="partner_info">
+   <div class="greenbg" style="color: white;">
+     <div class="container">
+      <p class="headings">Our Partners</p>
+      <table style ="width: 90%">
+       <tr>
+         <td style="width: 45%"> <img src="shaykhky.jpg" width = "80%"> <br></td>
+         <td>
+           <h3 align = "center"> Shaykh Khalid Yasin </h3>
+          <p align = "center">
 
+          In Spring of 2017, we secured a merger with world renowned Scholar and Da'ee, Shaykh Khalid Yasin - The Founder and President of The Purpose of Life Foundation.
+         <br> <br>
+         <a class="btn btn-default" href="partnerspage.html" role="button" >Read More</a>
+        </p>
+
+        </td>
+       </tr>
+    </table>
+  </div>
+<br><br><br>
+
+
+  <div class="container">
+   <table style ="width: 90%">
+    <tr>
+
+      <td>
+        <h3 align = "center"> INK TV </h3>
+       <p align = "center">
+       INKTV is a media platform that reveals the beauty and holistic benefits of religion and spirituality. The platform also offers viewers an opportunity to send questions directly to scholars and dignitaries.
+      <br> <br>
+      <a class="btn btn-default" href="partnerspage.html" role="button">Read More</a>
+     </p>
+     </td>
+
+     <td style="width: 45%; text-align: right;"> <img src="inktv.jpg" width = "80%"> <br></td>
+    </tr>
+  </table>
+  </div>
+
+  <br><br><br>
+  <div class="container">
+   <table style ="width: 90%">
+    <tr>
+      <td style="width: 47%"> <img src="alminhaal.jpg" width = "80%"> <br></td>
+      <td>
+        <h3 align = "center"> Al-Minhaal Academy </h3>
+       <p align = "center">
+       Al Minhaal Academy is one of the most advanced Islamic Schools in the United States: Featuring daycare for infants, full and part time Hifdh Schools, Adult Islamic Education Programs, Family and Youth Counseling, along with an excellent Scholastic Program.
+      <br> <br>
+      <a class="btn btn-default" href="partnerspage.html" role="button">Read More</a>
+     </p>
+     </td>
+    </tr>
+ </table>
+ </div>
+ <br><br><br>
+
+</div>
 
   </body>
 
   <hr>
   <footer>
-      <p align = "center"> &copy; 2017 Al-Hirz </p>
+      <p align = "center"> &copy; 2017 Al-Hirz | This website is under construction.</p>
+      <div align='center'><a href='http://www.free-website-hit-counter.com'><img src='http://www.free-website-hit-counter.com/c.php?d=6&id=103000&s=5' border='0' title='free website hit counter'></a><br / ><small><a href='http://www.free-website-hit-counter.com' title="free website hit counter">Free website hit counter</a></small></div>
   </footer>
 
 </html>
